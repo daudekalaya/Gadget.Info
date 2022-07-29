@@ -620,11 +620,11 @@ footer {
    }
 
    #jumbotron-daud h1 {
-      padding-left: 20px;
+      padding-left: 40px;
    }
 
    #jumbotron-daud p {
-      padding: 20px;
+      padding: 60px;
       font-size: 17px;
    }
 
@@ -642,10 +642,6 @@ footer {
 
    .card-kategory-daud {
       margin: 20px auto;
-   }
-
-   .card-spek-daud {
-      max-width: 100%;
    }
 
    .card-spek-daud, img {
