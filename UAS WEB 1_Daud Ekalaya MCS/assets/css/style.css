@@ -658,8 +658,12 @@ footer {
       max-width: 65%;
    }
 
-  .card-content-profile-daud {
+   .card-content-profile-daud {
       width: 100%;
+   }
+     
+   .card-content-profile-daud p {
+      font-size: 10px;
    }
 
    .card-contact-daud {
