@@ -544,6 +544,9 @@ footer {
       height: 40px;
       background-color: #7eaad6;
    }
+    
+   #jumbotron-daud {
+       padding: 20px;
 
    #jumbotron-daud img {
       width: 350px;
@@ -617,7 +620,7 @@ footer {
    }
 
    #jumbotron-daud {
-      padding: 0;
+      padding: 20px;
       margin-top: 30px;
    }
 
