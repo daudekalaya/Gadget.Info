@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gadget.Info</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
+    <!-- Peta -->
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-daud">
+                <a href="index.html">
+                    <h4>Gadget.Info</h4>
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="index.html"><button>Home</button></a></li>
+                <li><a href="category.html"><button>Category</button></a></li>
+                <li><a href="about.html"><button>About</button></a></li>
+                <li><a href="contact.html"><button>Contact</button></a></li>
+            </ul>
+
+            <div class="menu-toggle-daud">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div id="jumbotron-daud">
+            <img src="assets/img/abcdefg.png" alt="">
+            <h1>Gadget.Info</h1>
+            <p>Perincian teknis, karakteristik umum yang dimiliki oleh sebuah Gadget.</p>
+            <a href="seemore.html"><button>See More...</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="subjudul-daud">
+            <h4>CATEGORY POPULER</h4>
+            <h2>Mau mencari merk Apa?</h2>
+            <p>Temukan karakteristik gadget berdasarkan minatmu</p>
+        </div>
+        <div id="content-daud">
+            <article class="card-daud">
+                <section>
+                    <a href="samsung.html">
+                        <div id="samsung-daud">
+                            <h2>SAMSUNG</h2>
+                        </div>
+                        <h4>Keunggulan</h4>
+                        <ol>
+                            <li>Layar bagus (super Amoled)</li>
+                            <li>Kamera bagus (tipe menengah keatas)</li>
+                            <li>Desain kekinian</li>
+                            <li>Ekosistem Samsung pelan pelan mulai luas (Galaxy Watch, Buds, dll)</li>
+                            <li>Mampu menaikkan status sosial karena harga hp Samsung cukup tinggi</li>
+                            <li>Servis centre luas</li>
+                            <li>OS stabil (One UI)</li>
+                            <li>Harga jual second tidak terlalu jatuh</li>
+                        </ol>
+                    </a>
+                </section>
+            </article>
+
+            <article class="card-daud">
+                <section>
+                    <a href="oppo.html">
+                        <div id="oppo-daud">
+                            <h2>OPPO</h2>
+                        </div>
+                        <h4>Keunggulan</h4>
+                        <ol>
+                            <li>Harga yang lebih rendah untuk barang kelas premium</li>
+                            <li>Fokus pada baterai</li>
+                            <li>Desain kekinian</li>
+                            <li>Terkenal dengan kamera selfie-nya yang memesona</li>
+                            <li>Varian yang begitu banyak</li>
+                            <li>Kualitas kamera yang jauh lebih baik daripada smartphone di levelnya</li>
+                            <li>Harga jual yang mudah turun</li>
+                            <li>Punya service center yang sangat baik</li>
+                            <li>Pelayanan lebih lewat aplikasi</li>
+                        </ol>
+                    </a>
+                </section>
+            </article>
+
+            <article class="card-daud">
+                <section>
+                    <a href="xiaomi.html">
+                        <div id="xiaomi-daud">
+                            <h2>XIAOMI</h2>
+                        </div>
+                        <h4>Keunggulan</h4>
+                        <ol>
+                            <li>Harga Murah</li>
+                            <li>Mi Fans dan Dukungan Komunitas yang Kuat</li>
+                            <li>MIUI</li>
+                            <li>Terus Hadirkan Inovasi</li>
+                            <li>Penawaran Garansi yang Menarik</li>
+                            <li>Desain Elegan</li>
+                            <li>Spesifikasi Tinggi</li>
+                            <li>Dukungan Aplikasi</li>
+                        </ol>
+                    </a>
+                </section>
+            </article>
+        </div>
+        <h3 style="margin-top: 100px;">Here are some recommendations for gadget shop locations in Tasikmalaya</h3>
+        <div id="map-daud" style="width: 400px; height: 200px;"></div>
+    </main>
+    <footer>
+        &copy; 2022, Daud Ekalaya MCS
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

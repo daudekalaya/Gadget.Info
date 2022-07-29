@@ -1,0 +1,677 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    overflow-x: hidden;
+ }
+
+ nav {
+   display: flex;
+   background-color: #0466C8;
+   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1);
+   justify-content: space-between;
+   /* padding: 20px 0; */
+   padding: 0 30px;
+   height: 60px;
+   align-items: center;
+   color: #fff;
+   position: fixed;
+   top: 0;
+   width: 100%;
+ }
+
+ nav ul {
+   display: flex;
+   list-style: none;
+   width: 40%;
+   justify-content: space-around;
+ }
+
+ nav ul li a button{
+   width: 80px;
+   height: 40px;
+   background-color: transparent;
+   border: none;
+   color: #fff;
+   font-family: 'Nunito', sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 0.9em;
+ }
+
+ nav ul li a button:hover {
+   background-color: #0253a3;
+   width: 80px;
+   height: 40px;
+   border-radius: 10px;
+   cursor: pointer;
+ }
+
+ .logo-daud a {
+   color: #fff;
+   text-decoration: none;
+ }
+
+ /* hamburger menu */
+ .menu-toggle-daud {
+   display: none;
+   flex-direction: column;
+   height: 20px;
+   justify-content: space-between;
+   position: relative;
+ }
+
+ .menu-toggle-daud input {
+   position: absolute;
+   width: 40px;
+   height: 28px;
+   left: -5px;
+   top: -3px;
+   opacity: 0;
+   cursor: pointer;
+   z-index: 2;
+ }
+
+ .menu-toggle-daud span{
+   display: block;
+   width: 28px;
+   height: 3px;
+   background-color: #fff;
+   border-radius: 3px;
+   transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle-daud span:nth-child(2) {
+ transform-origin: 0 0;
+}
+
+.menu-toggle-daud span:nth-child(4) {
+   transform-origin: 0 100%;
+}
+
+.menu-toggle-daud input:checked ~ span:nth-child(2) {
+   background-color: white;
+   transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle-daud input:checked ~ span:nth-child(4) {
+   background-color: white;
+   transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle-daud input:checked ~ span:nth-child(3) {
+   opacity: 0;
+   transform: scale(0);
+}
+
+
+#jumbotron-daud {
+   background-color: #1E293B;
+   font-size: 20px;
+   padding: 60px;
+   padding-top: 100px;
+   color: #fff;
+}
+
+#jumbotron-daud p {
+   font-size: 30px;
+}
+
+#jumbotron-daud img {
+   width: 350px;
+   float: right;
+   margin-top: 30px;
+}
+
+#jumbotron-daud button {
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+   color: #fff;
+   border-color: transparent;
+   background-color: #0466C8;
+   cursor: pointer;
+}
+
+main {
+   padding: 60px;
+}
+
+.subjudul-daud h4 {
+   margin-top: 100px;
+   color: #0466C8;
+}
+
+.subjudul-daud p {
+   margin-bottom: 100px;
+   color: #64748b;
+}
+
+#content-daud {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-between;
+}
+
+.card-daud {
+   background-color: #fff;
+   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   width: 32%;
+   padding: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.card-daud:hover {
+   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1024px)
+{
+   .card-daud {
+      width: 100%;
+      margin-top: 10px;
+   }
+}
+
+#samsung-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #132998;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#oppo-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #009863;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#xiaomi-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #f76400;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#xiaomi-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #f74801;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#asus-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #004e93;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#realme-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #f2bf14;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#apple-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #aaaaaa;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#infinix-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #71a602;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+#sony-daud {
+   width: 100%;
+   height: 100px;
+   color: #fff;
+   background-color: #000;
+   padding: 10px;
+   font-size: 20px;
+   text-align: center;
+}
+
+.card-daud a {
+   color: black;
+   text-decoration: none;
+}
+
+.card-daud p {
+   color: #64748b;
+}
+
+.card-daud ol li {
+   color: #64748b;
+   margin-top: 10px;
+}
+
+/* Halaman Kategory */
+
+.card_kategory-daud {
+   border-radius: 5px;
+   padding: 30px;
+   margin-top: 15px;
+   /* width: 15%; */
+}
+
+.card_kategory-daud:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 30px;
+   margin-top: 15px;
+   background-color: #fff;
+}
+
+.featured-image-daud {
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.type-hp-daud, h5{
+   color: #333;
+   padding: 1px;
+   text-align: center;
+}
+
+/* Halaman Spek */
+
+.card-spek-daud {
+   background-color: #fff;
+   /* box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1); */
+   border-radius: 5px;
+   width: 80%;
+   padding: 20px;
+   margin: 20px auto;
+}
+
+.card-spek-daud a h4 {
+   color: #333;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.card-spek-daud a {
+   color: #333;
+   text-decoration: none;
+}
+
+.card-spek-daud, img{
+   display: flex;
+}
+
+.spekbasic-daud {
+   margin-top: 80px;
+   margin-left: 20px;
+}
+
+.spekbasic-daud table {
+   text-align: left;
+}
+
+.card-speklengkap-daud {
+   background-color: #fff;
+   /* box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1); */
+   border-radius: 5px;
+   width: 80%;
+   padding: 20px;
+   margin: 0 auto;
+}
+
+.card-speklengkap-daud h4 {
+   color: #0466C8;
+}
+
+.card-speklengkap-daud table{
+   width: 100%;
+   text-align: left;
+}
+
+.card-speklengkap-daud table tr td{
+   border-bottom: 1px solid #94a3b8 ;
+   width: 80%;
+}
+
+.card-speklengkap-daud table tr th,td {
+   font-size: 14px;
+}
+
+/* Halaman about */
+
+.card-profile-daud {
+   background-color: #fff;
+   box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   width: 60%;
+   padding: 0;
+   margin: 20px auto;
+}
+
+.card-bg-daud{
+   background-color: #0466C8;
+   border-start-end-radius: 5px;
+   border-start-start-radius: 5px;
+   width: 100%;
+   height: 200px;
+   margin: 0;
+}
+
+.card-bg-daud h3 {
+   color: #fff;
+   padding: 50px;
+   text-align: center;
+}
+
+.profile-image-daud img{
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 100px;
+   margin: 20px auto;
+   margin-top: -100px;
+   border: 10px solid #fff;
+}
+
+.card-content-profile-daud {
+   text-align: center;
+   padding: 20px;
+}
+
+.card-content-profile-daud p {
+   color: #64748b;
+}
+
+/* Halaman Contact */
+
+.card-contact-daud {
+   width: 70%;
+   background: #fff;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 20;
+   margin: 70px auto;
+}
+
+.subjudul-contact-daud h2 {
+   color: #0466C8;
+   text-align: center;
+}
+
+.subjudul-contact-daud p {
+   color: #64748b;
+   text-align: center;
+}
+
+.card-contact-daud img{
+   width: 40%;
+   margin: 90px auto;
+}
+
+.input-row-daud {
+   margin-bottom: 14px;
+}
+
+.input-row-daud input:not([type="submit"]),
+.input-row-daud select,
+.input-row-daud textarea {
+   width: 100%;
+   margin: 0 0 3px;
+   padding: 10px 15px;
+   font-size: 15px;
+   border-radius: 5px;
+   background: #ececec;
+   border: 1px solid transparent;
+}
+
+.input-row-daud textarea {
+   height: 100px;
+   resize: none;
+}
+
+.card-contact-daud input[type="submit"] {
+   font-size: 15px;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: 0;
+   background: #00668d;
+   color: #fff;
+   display: block;
+   margin: 0 auto;
+   cursor: pointer;
+}
+
+/* halaman valid */
+
+
+/* peta */
+.leaflet-container {
+   height: 400px;
+   width: 600px;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+footer {
+   padding: 20px;
+   color: #fff;
+   background-color: #1e293b;
+   clear: both;
+}
+
+/* Ukuran tablet */
+@media only screen and (max-width: 768px) {
+   .menu-toggle-daud {
+      display: flex;
+   }
+   
+   nav {
+      padding: 0 30px;
+   }
+
+   nav ul {
+      padding: 1rem;
+      position: fixed;
+      left: 0;
+      top: -16px;
+      width: 60%;
+      height: 100vh;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items:flex-start;
+      background-color: #fff;
+      z-index: auto;
+      transform: translateX(-100%);
+      transition: 1s;
+   }
+
+   nav ul li a button{
+      text-align: left;
+      line-height: 2;
+      font-size: large;
+      color: #333;
+      width: 340px;
+      height: 40px;
+   }
+
+   nav ul.slide {
+      transform: translateY(0);
+   }
+
+   nav ul li a button:hover {
+      color: #333;
+      width: 340px;
+      height: 40px;
+      background-color: #7eaad6;
+   }
+
+   #jumbotron-daud img {
+      width: 350px;
+      float: none;
+      margin: 30px auto;
+   }
+
+   .card-kategory-daud {
+      min-width: 100%;
+   }
+
+   .card-spek-daud {
+      min-width: 100%;
+   }
+
+   .card-speklengkap-daud {
+      min-width: 100%;
+   }
+
+   .card-profile-daud {
+      width: 100%;
+   }
+ }
+
+ /* ukuran mobile */
+ @media only screen and (max-width: 768px) {
+   .menu-toggle-daud {
+      display: flex;
+   }
+
+   nav {
+      padding: 0 30px;
+   }
+
+   nav ul {
+      padding: 1rem;
+      position: fixed;
+      left: 0;
+      top: -16px;
+      width: 80%;
+      height: 100vh;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items:flex-start;
+      background-color: #fff;
+      z-index: auto;
+      transform: translateX(-100%);
+      transition: 1s;
+   }
+
+   nav ul li a button{
+      text-align: left;
+      line-height: 2;
+      font-size: large;
+      color: #333;
+      width: 270px;
+      height: 40px;
+   }
+
+   nav ul.slide {
+      transform: translateY(0);
+   }
+
+   nav ul li a button:hover {
+      color: #333;
+      width: 270px;
+      height: 40px;
+      background-color: #7eaad6;
+   }
+
+   #jumbotron-daud {
+      padding: 20px;
+      margin-top: 30px;
+   }
+
+   #jumbotron-daud h1 {
+      padding-left: 20px;
+   }
+
+   #jumbotron-daud p {
+      padding: 20px;
+      font-size: 17px;
+   }
+
+   #jumbotron-daud img{
+      padding: 20px;
+   }
+
+   #jumbotron-daud a {
+      padding-left: 20px;
+   }
+
+   .card_kategory-daud {
+      margin: 20px auto;
+   }
+
+   .card-spek-daud {
+      max-width: 100%;
+   }
+
+   .card-spek-daud, img {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .card-speklengkap-daud {
+      min-width: 100%;
+   }
+
+   .card-speklengkap-daud table tr td{
+      max-width: 65%;
+   }
+
+   .card-profile-daud {
+      width: 100%;
+   }
+
+   .card-contact-daud {
+      width: 100%;
+   }
+
+   .input-row-daud input:not([type="submit"]),
+   .input-row-daud select, .input-row-daud textarea {
+      font-size: 10px;
+   }
+
+   .profile-image-daud img {
+      width: 150px;
+      height: 150px;
+   }
+ }
