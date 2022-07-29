@@ -635,8 +635,12 @@ footer {
    #jumbotron-daud a {
       padding-left: 20px;
    }
+     
+   .card-daud {
+      width: 100%;
+   }
 
-   .card_kategory-daud {
+   .card-kategory-daud {
       margin: 20px auto;
    }
 
