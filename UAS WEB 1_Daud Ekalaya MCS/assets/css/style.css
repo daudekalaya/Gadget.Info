@@ -642,8 +642,8 @@ footer {
       width: 100%;
    }
    
-   .card-daud section a ol {
-      font-size: 15px;
+   .card-daud ol li {
+      font-size: 10px;
     }
 
    .card-kategory-daud {
