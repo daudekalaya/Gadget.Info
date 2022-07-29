@@ -500,7 +500,8 @@ footer {
 }
 
 /* Ukuran tablet */
-@media only screen and (max-width: 768px) {
+All desktop styles attached only after 1025px
+@media (min-width: 1025px) {
    .menu-toggle-daud {
       display: flex;
    }
@@ -569,7 +570,9 @@ footer {
  }
 
 /*  ukuran mobile */
- @media only screen and (max-width: 768px) {
+ All mobile styles attached only between 320px and 1024px
+
+@media (min-width: 320px) and (max-width: 1024px) {
    .menu-toggle-daud {
       display: flex;
    }
