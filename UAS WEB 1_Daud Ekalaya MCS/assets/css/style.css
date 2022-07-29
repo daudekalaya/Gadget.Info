@@ -500,8 +500,7 @@ footer {
 }
 
 /* Ukuran tablet */
-All desktop styles attached only after 1025px
-@media (min-width: 1025px) {
+@media only screen and (max-width: 768px) {
    .menu-toggle-daud {
       display: flex;
    }
