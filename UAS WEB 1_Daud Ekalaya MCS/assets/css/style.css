@@ -568,10 +568,8 @@ footer {
    }
  }
 
-/*  ukuran mobile */
- All mobile styles attached only between 320px and 1024px
-
-@media (min-width: 320px) and (max-width: 1024px) {
+ /* ukuran mobile */
+ @media only screen and (max-width: 768px) {
    .menu-toggle-daud {
       display: flex;
    }
@@ -637,11 +635,6 @@ footer {
    #jumbotron-daud a {
       padding-left: 20px;
    }
-     
-   .card-daud {
-    width: 100%;
-    margin-top: 10px;
-    }
 
    .card_kategory-daud {
       margin: 20px auto;
