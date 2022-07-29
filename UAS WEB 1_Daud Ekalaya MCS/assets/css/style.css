@@ -569,7 +569,7 @@ footer {
  }
 
  /* ukuran mobile */
- @media only screen and (max-width: 768px) {
+/*  @media only screen and (max-width: 768px) {
    .menu-toggle-daud {
       display: flex;
    }
@@ -623,10 +623,10 @@ footer {
       padding-left: 20px;
    }
 
-/*    #jumbotron-daud p {
+   #jumbotron-daud p {
       padding: 20px;
       font-size: 17px;
-   } */
+   }
 
    #jumbotron-daud img{
       padding: 20px;
@@ -674,4 +674,4 @@ footer {
       width: 150px;
       height: 150px;
    }
- }
+ } */
