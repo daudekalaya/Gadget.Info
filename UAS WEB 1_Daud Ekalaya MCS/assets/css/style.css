@@ -620,7 +620,7 @@ footer {
    }
 
    #jumbotron-daud h1 {
-      padding-left: 40px;
+      padding-left: 60px;
    }
 
    #jumbotron-daud p {
@@ -629,11 +629,11 @@ footer {
    }
 
    #jumbotron-daud img{
-      padding: 20px;
+      padding: 60px;
    }
 
    #jumbotron-daud a {
-      padding-left: 20px;
+      padding-left: 60px;
    }
      
    .card-daud {
